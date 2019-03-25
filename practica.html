@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+
+  <title>Pagina Practica</title>
+  <meta name="description" content="Pagina de Practica">
+  <meta name="author" content="Leonardo Sandoval">
+
+
+</head>
+<style type="text/css">
+
+    .body
+    {
+        padding: 0px;
+
+    }
+    .div
+    {
+        padding: 0px;
+    }
+    .cuadrado
+    {
+        height: 250px;
+        width: 250px;
+        margin: 0px;
+        background-color: aqua;
+        transition: all 2s ease;
+        opacity:1;
+        display: inline-block;
+    }
+    .cuadrado1
+    {
+        height: 250px;
+        width: 250px;
+        margin: 0px;
+        background-image: url("bailarina1.jpg");
+        display: inline-block;
+        background-size: cover;
+        background-position: center;
+        transition: all 2.5s ease;
+    }
+    .cuadrado2
+    {
+        height: 250px;
+        width: 250px;
+        margin: 0px;
+        background-image: url("waldo.jpg");
+        display: inline-block;
+        background-size: cover;
+        background-position: center;
+    }
+    .cuadrado3
+    {
+        height: 250px;
+        width: 250px;
+        margin: 0px;
+        background-color: orange;
+        display: inline-block;
+    }
+    .interno
+    {   
+        max-width: 99%;
+        max-height: 99%;
+        text-align: center; 
+        vertical-align: middle;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .cuadrado:hover
+    {
+        border-radius:50%;
+        transform: rotate(720deg) scale(0.1);
+        transition: all 5s ease;
+        opacity:0.1;        
+    }
+    .cuadrado1:hover
+    {
+        background-image: url("bailarina2.jpg");
+        background-size: cover;
+        background-position: center;
+        transition: all 5s ease;
+        transform: rotatey(720deg);
+    }
+    .cuadrado2:hover
+    {
+        top: 0px; 
+        left: 0px;
+        height: 100%; 
+        width: 100%; 
+        background-image: url("scary1.jpg") ; 
+        background-size: cover; 
+        position: fixed;
+    }
+
+
+</style>
+
+<body>
+
+<div class="cuadrado">
+    <!-- <div class="interno">Cuadrado se vuelve circulo mientras gira y se va al olvido</div> -->
+</div>
+<div class="cuadrado1"></div>
+<div class="cuadrado2"></div>
+<div class="cuadrado3"></div>
+
+</body>
+</html>
