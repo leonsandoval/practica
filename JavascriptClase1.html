@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        console.log("Hola mundo")
+        var edad=8;
+        edad=8.9;
+        edad="cerca de ocho";
+        edad=new Object();
+        edad.apellido="Sandoval";
+        edad.edad=213;
+        edad.domicilios=new Array();
+        edad.domicilios[0]="mi casa";
+        console.log(edad);
+        edad=new Array();
+        edad=true;
+        //json ajax
+        edad={
+            nombre:"Jose",
+            apellido:"quezada",
+            edad:123,
+            domicilios:["casa1","casa2"]
+        };
+        
+        console.log(edad);
+        function Crear(){
+            var resultado=document.getElementById("resultado");
+            var cant=document.getElementById("cantidad").value;
+            for(var i=1; i<=cant; i++){
+                resultado.innerHTML+="<input placeholder = 'Jugador"+i+"'/>'";
+            }
+            
+        }
+
+
+        function escribir(){
+            var escribe=document.getElementById("escribe");
+            escribe.innerText = "resulta esta cosa o NO?"
+        }
+    </script>
+</head>
+<body>
+    <input type="number" name="" id="cantidad">
+    <button type="button" onclick="Crear()">Crear</button>
+    <div id="resultado"></div>
+    <button type="button" onclick="escribir()">Escribir</button>
+    <div id="escribe"></div>
+
+
+    <pre>-antes era necesario poner el tipo en script, habia que ponerle que era javascript, pero ahora se asume que es javascript <br>
+-los alert pegan el navegador, y como en este caso se creo al principio del script, se muestra antes que cargue cualquier cosa <br>
+-algunas veces los desarrolladores usan las alertas como banderitas, nosotros usaremos console.log <br>
+-es debilmente tipado xq al declarar la variable no se establece el tipo de datos, sino que la variable acepta lo que sea <br>
+-json es un objeto en javascript (JavaScript Object Notation) <br>
+-ajax nos permite que las paginas trabajen de forma asincrona, no pegando el navegador entre solicitudes, sino mas bien permitiendo que siga haciendo cosas mientras se estan haciendo solicitudes <br>
+-si quiero asociar js a un boton tiene que ser de tipo button, la funcion se le agrega normalmente con la funcion onclick
+
+</pre> 
+    
+</body>
+</html>
